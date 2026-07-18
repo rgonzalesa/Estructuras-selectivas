@@ -23,7 +23,11 @@ int main() {
             cout << "Resultado: " << a * b << endl;
             break;
         case '/':
-            cout << "Resultado: " << a / b << endl;
+            if (b == 0) {
+                cout << "Error: no se puede dividir entre cero" << endl;
+            } else {
+                cout << "Resultado: " << a / b << endl;
+            }
             break;
         default:
             cout << "Operador no valido" << endl;
